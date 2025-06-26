@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color:#eebefa;
+    position: relative;
+}
+h1{
+    text-align: center;
+    font-size: 5rem;
+    font-family: 'Great Vibes','Times New Roman', Times, serif;
+    animation: drop 2s 2s ease both;
+}
+@keyframes drop{
+    0%{transform: translateY(-250px);}
+    50%{transform: translateY(20px);}
+    70%{transform: translateY(15px);}
+    100%{transform: translateY(20px);}
+}
+.heart{
+    position: fixed;
+    animation: float 7s ease infinite both;
+}
+@keyframes float{
+    0%{opacity: 0.3; scale: 0.5;}
+    50%{opacity: 0.5; scale: 1;}
+    100%{opacity: 0.3; scale: 0.5;}
+}
+.cake-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.plate{
+    background-color: whitesmoke;
+    inline-size:290px;
+    block-size: 100px;
+    border-radius: 50%;
+    position:absolute;
+    top:485px;
+    border: 10px solid rgb(226, 224, 224);
+    box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.3);
+    animation: plate 2s ease both;
+}
+
+@keyframes plate{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.layer1{
+    background-color: #D2A679;
+    inline-size:250px;
+    block-size: 100px;
+    border-radius:25px;
+    position:absolute;
+    top:-50px;
+    right:10px;
+}
+.layer2{
+    background-color: #8B5E3C;
+    inline-size:220px;
+    block-size: 90px;
+    border-radius:25px;
+    position:absolute;
+    top:-80px;
+    right:15px;
+
+}
+.layer3{
+    background-color: #5C3A28;
+    inline-size:190px;
+    block-size: 80px;
+    border-radius:25px;
+    position:absolute;
+    top:-70px;
+    right:15px;
+
+}
+.candle{
+    background-color: rgb(235, 233, 233);
+    inline-size:10px;
+    block-size: 60px;
+    border-radius:3px;
+    position:absolute;
+    top:-60px;   
+}
+.flame{
+    background-color: #f08c00;
+    inline-size:10px;
+    block-size: 25px;
+    border-radius: 50%;
+    position:absolute;
+    border: #ffd43b 3px solid;
+    top:-25px;
+    transition: 0.3s ease ;
+}
+.flame:hover{
+    transform: rotateY(90deg);
+    cursor: pointer;
+}
